@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.scroll img {
+  height: 200px;
+}
+
+.scroll {
+  display: flex;
+  width: 800px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.scroll::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.botao {
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+}

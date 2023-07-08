@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <img src="back.png" class="botao voltar" />
+    <div class="scroll">
+      <img src="bd.jpg" alt="" />
+      <img src="bird.jpg" alt="" />
+      <img src="yellow.jpg" alt="" />
+      <img src="iceberg.jpg" alt="" />
+      <img src="tree.jpg" alt="" />
+      <img src="water.jpg" alt="" />
+      <img src="rocks.jpg" alt="" />
+      <img src="people.jpg" alt="" />
+      <img src="ladybug.jpg" alt="" />
+    </div>
+    <img src="next.png" class="botao avancar" />
+  </body>
+
+  <script>
+    let scroll = document.querySelector(".scroll");
+    let botaoVoltar = document.querySelector(".voltar");
+    let botaoAvancar = document.querySelector(".avancar");
+
+    botaoVoltar.addEventListener("click", () => {
+      scroll.scrollLeft -= 400;
+    });
+
+    botaoAvancar.addEventListener("click", () => {
+      scroll.scrollLeft += 400;
+    });
+  </script>
+</html>
